@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="white_top.css">
+</head>
+<body>
+
+  <!-- Clickable Brand Title -->
+  <a href="login.html" class="brand-link">
+    <h1 class="brand-title">MARGAUX</h1>
+  </a>
+
+  <div class="container">
+    <div class="brand">MARGAUX</div>
+
+    <div class="product">
+      <div class="product-image">
+        <img id="mainImage" src="dress.png" alt="product1">
+      </div>
+
+      <div class="product-details">
+        <div class="product-title">
+            Sweetra Women's Striped Halter Button Design Casual Short Dress
+        </div>
+
+        <div class="price"> ₱566</div>
+        <button class="add-to-cart">ADD TO CART</button>
+        <div class="cart-icon">🛒</div>
+
+        <div class="extra-images">
+          <img src="dress1.png" onclick="updateMainImage(this.src)" />
+          <img src="dress2.png" onclick="updateMainImage(this.src)" />
+          <img src="dress3.png" onclick="updateMainImage(this.src)" />
+          <img src="dress.png" onclick="updateMainImage(this.src)" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Clickable "Previous" -->
+    <a href="cart.html" class="prev-link">
+      <div class="prev">Previous</div>
+    </a>
+  </div>
+
+  <script>
+    function updateMainImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <h1>MARGAUX</h1>
+  </footer>
+</body>
+</html>
