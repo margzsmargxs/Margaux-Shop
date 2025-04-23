@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="white_top.css">
+</head>
+<body>
+
+  <header class="account">
+    <div class="left">
+      <a href="profile.html">
+        <img src="M logo.png" alt="Margaux Logo"> </a>
+        <a href="profile.html">
+       <span style="color: hotpink">margaux@gmail.com</span>
+      </a>
+    </div>
+    
+     <div class="promo">
+      <div>FLASH SALE</div>
+      <div>GET ₱150 OFF</div>
+      <div>15-DAY FREE RETURNS</div>
+      <div>EXCLUSIVE PAYMENT OFFERS</div>
+      <div>E-GIFTCARDS</div>
+      <div>NEW USER VOUCHERS</div>
+      <div>AFFORDABLE</div>
+      <div>GOOD DEALS</div>
+    </div>   
+
+    <div class="cart">
+  <a href="cart.html">
+    <img src="cart.png" alt="Cart">
+  </a>
+</div>
+
+<div id="added-message" class="added-message">Added to cart!</div>
+
+  </header>
+
+  <!-- Clickable Brand Title -->
+  <a href="login.html" class="brand-link">
+    <h1 class="brand-title">MARGAUX</h1>
+  </a>
+
+  <div class="container">
+    <div class="brand">MARGAUX</div>
+
+    <div class="product">
+      <div class="product-image">
+        <img id="mainImage" src="Red_heels.png" alt="product1">
+      </div>
+
+      <div class="product-details">
+        <div class="product-title">
+            Sexy Wine Red Pointed Toe Butterfly Decor Strap Thin High Heel Shoes For Wedding, Party, Banquet Valentines
+        </div>
+
+        <div class="price"> ₱1,114</div>
+        <button class="add-to-cart">ADD TO CART</button>
+        
+
+        <div class="extra-images">
+          <img src="red_heels1.png" onclick="updateMainImage(this.src)" />
+          <img src="red_heels2.png" onclick="updateMainImage(this.src)" />
+          <img src="red_heels3.png" onclick="updateMainImage(this.src)" />
+          <img src="Red_heels.png" onclick="updateMainImage(this.src)" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Clickable "Previous" -->
+    <a href="login.html" class="prev-link">
+      <div class="prev">Previous</div>
+    </a>
+  </div>
+
+  <script>
+    function updateMainImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
+  </script>
+
+<script>
+  const cartIcon = document.querySelector('.cart img');
+  const cartPopup = document.getElementById('cart-popup');
+  const addedMessage = document.getElementById('added-message');
+  const addButtons = document.querySelectorAll('button');
+
+  // Cart icon toggle
+  cartIcon.addEventListener('click', () => {
+    cartPopup.classList.toggle('show');
+  });
+
+  // Close button in cart
+  function closeCart() {
+    cartPopup.classList.remove('show');
+  }
+
+  // Show "Added to cart" message
+  function showAddedMessage() {
+    addedMessage.style.display = 'block';
+    setTimeout(() => {
+      addedMessage.style.display = 'none';
+    }, 2000);
+  }
+
+  // Add to cart click events
+  addButtons.forEach(button => {
+    button.addEventListener('click', showAddedMessage);
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <h1>MARGAUX</h1>
+  </footer>
+</body>
+</html>

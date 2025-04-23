@@ -1,0 +1,164 @@
+
+@media (max-width: 768px) {
+    .card {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+      margin-bottom: 100px;
+    }
+  
+    .avatar {
+      width: 50px;
+      height: 50px;
+    }
+  
+    input {
+      font-size: 13px;
+      padding: 6px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .promo {
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .brand-title {
+      font-size: 20px;
+      padding: 10px;
+    }
+  
+    footer {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      padding: 10px;
+    }
+  
+    label {
+      font-size: 13px;
+    }
+  
+    .email {
+      font-size: 14px;
+    }
+  
+    .brand-title {
+      font-size: 18px;
+    }
+  }
+  
+ 
+ .card {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 300px;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .email {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 0 4px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  .sign-out {
+    margin-top: 20px;
+  }
+
+  .Home {
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  
+  button:hover {
+    background-color: #f4a6b2;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #FFB6C1;
+    margin: 0;
+    color: #333;
+}
+
+ 
+  .promo {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex: 15; /* Give promo more space */
+    text-align: center;
+    padding: 15px;
+    background: white;
+  }
+
+  .brand-title {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .brand-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 15px;
+    margin: 0;
+  }
